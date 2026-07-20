@@ -26,8 +26,7 @@ while Left < Right:
     Right -= 1
 
 print(list_number)
-for i in range (x -1, -1) :
-    print(list_number[x])
+for i in range (x -1, -1, -1) :
+    print(list_number[i])
 
-"""Sliding window"""
 
