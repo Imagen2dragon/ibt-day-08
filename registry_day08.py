@@ -235,6 +235,7 @@ if __name__ == "__main__":
     print("=" * 60)
 
     amen = registry.find("123456")
+    assert amen is not None
     print(f"\nAccount 123456 ({amen.owner}) history:")
     for i, tx in enumerate(amen.history):
         print(f"  [{i}] {tx['type']}: {tx['amount']} ETB")
@@ -243,6 +244,7 @@ if __name__ == "__main__":
     print(f"Total transaction amount: {total} ETB")
 
     kirubel = registry.find("654321")
+    assert kirubel is not None
     print(f"\nAccount 654321 ({kirubel.owner}) history:")
     for i, tx in enumerate(kirubel.history):
         print(f"  [{i}] {tx['type']}: {tx['amount']} ETB")
