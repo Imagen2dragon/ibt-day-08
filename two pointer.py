@@ -1,5 +1,5 @@
 """two pointer example"""
-number_arr = [4, 5, 9, 10, 11, 15]
+number_arr = [4, 5, 9, 10, 11, 1]
 target =21
 arr_length = len(number_arr)
 Left = 0
